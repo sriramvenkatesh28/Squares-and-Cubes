@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+table, tr, td, th
+{
+border: solid black;
+width: 33%;
+text-align: center;
+border-collapse: collapse;
+background-color:#d52e3f;
+text-shadow: 
+}
+
+table { margin: auto; }
+
+p{
+	border: solid black;
+	font-size: 5rem;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 580px;
+    height:30vh;
+    width: 50vh;
+    line-height: 30vh;
+	color: #fcedd8;
+	background: #d52e3f;
+	font-weight: 700;
+    text-shadow: 5px 5px 0px #eb452b;
+                
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+</style>
+<script>
+document.write( "<table><tr><th colspan='3'> NUMBERS FROM 0 TO 10 WITH THEIR SQUARES AND CUBES </th></tr>" );
+document.write( "<tr><td>Number</td><td>Square</td><td>Cube</td></tr>" );
+for(var n=100; n<=1000; n+=100)
+{
+document.write( "<tr><td>" + n + "</td><td>" + n*n + "</td><td>" + n*n*n
++ "</td></tr>" ) ;
+}
+document.write( "</table>" ) ;
+</script>
+</head>
+<body>
+	<p>
+  		<span class="blink">Hurray!</span>
+	</p>
+</body>
+</html>
